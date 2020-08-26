@@ -162,9 +162,11 @@ We provide examples of training commands used to train HypDGCN and other graph e
 
   * Cora and Pubmed: 
 
-To train a HypDGCN node classification model on Cora and Pubmed datasets, pre-train embeddings for link prediction as decribed in the previous section. Then train a MLP classifier using the pre-trained embeddings (```embeddings.npy``` file saved in the ```save-dir``` directory). For instance for the Pubmed dataset(Test accuracy=78.80):
+To train a HypDGCN node classification model on Cora and Pubmed datasets, pre-train embeddings for link prediction as decribed in the previous section. Then train a MLP classifier using the pre-trained embeddings (```embeddings.npy``` file saved in the ```save-dir``` directory).
+
+* Pubmed (Test accuracy=79.30) 
  
-```python train.py --task nc --dataset pubmed --model HypDGCN --lr 0.01 --dim 128 --num-layers 5 --act relu --bias 1 --dropout 0.6 --weight-decay 0.001 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 1234```
+```python train.py --task nc --dataset pubmed --model HypDGCN --lr 0.01 --dim 32 --num-layers 5 --act relu --bias 1 --dropout 0.5 --weight-decay 0.0005 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 4567```
 
   * Cora (Test accuracy=81.90):
   
