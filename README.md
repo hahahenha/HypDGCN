@@ -172,9 +172,9 @@ To train a HypDGCN node classification model on Cora and Pubmed datasets, pre-tr
   
  ```python train.py --task nc --dataset cora --model HypDGCN --lr 0.01 --dim 128 --num-layers 5 --act relu --bias 1 --dropout 0.6 --weight-decay 0.001 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 1234```
 
-  * Disease (Test accuracy=89.88):
+  * Disease (Test accuracy=94.53):
 
-```python train.py --task nc --dataset disease_nc --model HypDGCN --lr 0.01 --dim 32 --num-layers 5 --act relu --bias 1 --dropout 0.01 --weight-decay 0.0 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 42```
+```python train.py --task nc --dataset disease_nc --model HypDGCN --lr 0.01 --dim 32 --num-layers 10 --act relu --bias 1 --dropout 0.01 --weight-decay 0.0 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 42```
 ### 4.2 Train other graph embedding models
 
 #### Node classification on the Pubmed dataset
