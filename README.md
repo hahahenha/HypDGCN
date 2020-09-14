@@ -3,11 +3,7 @@ Deep Graph Convolutional Networks in Hyperbolic Space in PyTorch
 
 ## 1. Overview
 
-<object data="https://github.com/hahahenha/HypDGCN/tree/master/fig/framework.pdf" type="application/pdf">
-    <embed src="https://github.com/hahahenha/HypDGCN/tree/master/fig/framework.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/hahahenha/HypDGCN/tree/master/fig/framework.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![framework](fig/framework.png)
 
 This repository is a graph representation learning library, containing an implementation of Deep Graph Convolutions in PyTorch, as well as multiple embedding approaches including:
 
