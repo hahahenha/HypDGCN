@@ -213,9 +213,9 @@ To train a HypDGCN node classification model on Cora and Pubmed datasets, pre-tr
 
 If you find this code useful, please cite the following paper: 
 ```
-@inproceedings{han2020HypDGCN,
+@inproceedings{2020HypDGCN,
   title={Deep digraph convolutional neural networks},
-  author={Xiao Han},
+  author={},
   booktitle={},
   pages={},
   year={}
