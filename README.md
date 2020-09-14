@@ -24,7 +24,7 @@ This repository is a graph representation learning library, containing an implem
   * Graph Convolutional Neural Networks (```GCN```) [[4]](https://arxiv.org/pdf/1609.02907.pdf)
   * Graph Attention Networks (```GAT```) [[5]](https://arxiv.org/pdf/1710.10903.pdf)
   * Hyperbolic Graph Convolutions (```HGCN```) [[1]](http://web.stanford.edu/~chami/files/hgcn.pdf)
-  * Deep Graph Convolutions in Hyperbolic Space (```HypDGCN```)
+  * Deep Graph Convolutions in Hyperbolic Space (```HypDGCN```)（see the framework above）
 
 All models can be trained for 
 
