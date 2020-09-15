@@ -11,7 +11,7 @@ config_args = {
         'weight-decay': (0., 'l2 regularization strength'),
         'optimizer': ('Adam', 'which optimizer to use, can be any of [Adam, RiemannianAdam]'),
         'momentum': (0.999, 'momentum in optimizer'),
-        'patience': (100, 'patience for early stopping'),
+        'patience': (500, 'patience for early stopping'),
         'seed': (4567, 'seed for training'),
         'log-freq': (1, 'how often to compute print train/val metrics (in epochs)'),
         'eval-freq': (1, 'how often to compute val metrics (in epochs)'),
