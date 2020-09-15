@@ -166,46 +166,46 @@ We provide examples of training commands used to train HypDGCN and other graph e
 
 To train a HypDGCN node classification model on Cora and Pubmed datasets, pre-train embeddings for link prediction as decribed in the previous section. Then train a MLP classifier using the pre-trained embeddings (```embeddings.npy``` file saved in the ```save-dir``` directory).
 
-* Pubmed (Test accuracy=79.30) 
+* Pubmed (Test f1-score=79.30) 
  
 ```python train.py --task nc --dataset pubmed --model HypDGCN --lr 0.01 --dim 32 --num-layers 5 --act relu --bias 1 --dropout 0.5 --weight-decay 0.0005 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 4567```
 
-  * Cora (Test accuracy=81.90):
+  * Cora (Test f1-score=81.90):
   
  ```python train.py --task nc --dataset cora --model HypDGCN --lr 0.01 --dim 128 --num-layers 5 --act relu --bias 1 --dropout 0.6 --weight-decay 0.001 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 1234```
 
-  * Disease (Test accuracy=94.53):
+  * Disease (Test f1-score=94.53):
 
 ```python train.py --task nc --dataset disease_nc --model HypDGCN --lr 0.01 --dim 32 --num-layers 10 --act relu --bias 1 --dropout 0.01 --weight-decay 0.0 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 42```
 ### 4.2 Train other graph embedding models
 
 #### Node classification on the Pubmed dataset
 
- * HGCN(Test accuracy=78.10):
+ * HGCN(Test f1-score=78.10):
  
  ```python train.py --task nc --dataset pubmed --model HGCN --lr 0.01 --dim 16 --num-layers 2 --act relu --bias 1 --dropout 0.6 --weight-decay 0.001 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 1234```
- * HNN (Test accuracy=68.20): 
+ * HNN (Test f1-score=68.20): 
  
 ``` python train.py --task nc --dataset pubmed --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 5 --cuda 0```
 
- * MLP (Test accuracy=73.00):
+ * MLP (Test f1-score=73.00):
   
 ```python train.py --task nc --dataset pubmed --model MLP --lr 0.01 --dim 16 --num-layers 2 --act None --bias 0 --dropout 0.2 --weight-decay 0.001 --manifold Euclidean --log-freq 5 --cuda 0```
 
- * GCN (Test accuracy=78.30): 
+ * GCN (Test f1-score=78.30): 
  
 ```python train.py --task nc --dataset pubmed --model GCN --lr 0.01 --dim 16 --num-layers 2 --act relu --bias 1 --dropout 0.7 --weight-decay 0.0005 --manifold Euclidean --log-freq 5 --cuda 0```
 
- * GAT (Test accuracy=78.50): 
+ * GAT (Test f1-score=78.50): 
 
 ```python train.py --task nc --dataset pubmed --model GAT --lr 0.01 --dim 16 --num-layers 2 --act elu --bias 1 --dropout 0.5 --weight-decay 0.0005 --alpha 0.2 --n-heads 4 --manifold Euclidean --log-freq 5 --cuda 0```
 
 #### Node classification on the Cora dataset
- * HGCN (Test accuracy=79.50):
+ * HGCN (Test f1-score=79.50):
  
 ```python train.py --task nc --dataset cora --model HGCN --lr 0.01 --dim 16 --num-layers 2 --act relu --bias 1 --dropout 0.6 --weight-decay 0.001 --manifold Hyperboloid --log-freq 5 --cuda 0 --n-heads 4 --alpha 0.2 --seed 1234```
 
- * GAT (Test accuracy=80.80):
+ * GAT (Test f1-score=80.80):
  
 ```python train.py --task nc --dataset cora --model GAT --lr 0.01 --dim 16 --num-layers 2 --act elu --bias 1 --dropout 0.5 --weight-decay 0.0005 --alpha 0.2 --n-heads 4 --manifold Euclidean --log-freq 5 --cuda 0```
 
